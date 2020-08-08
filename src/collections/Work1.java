@@ -1,7 +1,6 @@
 package collections;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -30,7 +29,7 @@ public class Work1 {
     }
 
     private static void sorting1(List<String> names){
-        Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
+        names.sort(String::compareTo);
     }
 
     private static void sorting2(List<String> names){

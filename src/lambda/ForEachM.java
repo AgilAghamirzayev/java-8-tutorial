@@ -23,7 +23,7 @@ public class ForEachM {
         // Consumer<String> makeUpperCase = s -> System.out.println(s.toUpperCase());
         names.forEach(makeUpperCase);
 
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new HashMap<>();
 
         map.put("A", "Alex");
         map.put("B", "Brian");
@@ -34,7 +34,6 @@ public class ForEachM {
         BiConsumer<String, Integer> action = (a, b) ->
         {
             System.out.println("Key: " + a +" Value: " + b);
-            //System.out.println("Value is: " + b);
         };
 
 
